@@ -1,0 +1,13 @@
+[Unit]
+Description=Memcached 
+Before=httpd.service
+After=network.target
+
+[Service]
+Type=simple
+Environment="USER=memcached" "PORT=11211" "MAXCONN=1024" "CACHESIZE=64"
+EnvironmentFile=-/etc/memcached/memcached.conf
+ExecStart=/usr/bin/memcached -u $USER -p $PORT -m $CACHESIZE -c $MAXCONN $OPTIONS
+
+[Install]
+WantedBy=multi-user.target
