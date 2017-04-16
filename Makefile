@@ -1,5 +1,5 @@
 PKG_NAME := memcached
-URL := http://www.memcached.org/files/memcached-1.4.33.tar.gz
-ARCHIVES :=
+URL := https://www.memcached.org/files/memcached-1.4.36.tar.gz
+
 
 include ../common/Makefile.common
