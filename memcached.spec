@@ -4,7 +4,7 @@
 #
 Name     : memcached
 Version  : 1.4.36
-Release  : 25
+Release  : 26
 URL      : https://www.memcached.org/files/memcached-1.4.36.tar.gz
 Source0  : https://www.memcached.org/files/memcached-1.4.36.tar.gz
 Source1  : memcached.service
