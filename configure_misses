@@ -1,0 +1,18 @@
+Configure miss: icc in use
+Configure miss: clang in use
+Configure miss: sasl/sasl.h usability
+Configure miss: sasl/sasl.h presence
+Configure miss: sasl/sasl.h
+Configure miss: library containing umem_cache_create
+Configure miss: library containing gethugepagesizes
+Configure miss: sasl_callback_ft
+Configure miss: htonll
+Configure miss: getpagesizes
+Configure miss: memcntl
+Configure miss: alignment
+Configure miss: GCC 64bit atomics
+Configure miss: setppriv
+Configure miss: umem.h usability
+Configure miss: umem.h presence
+Configure miss: umem.h
+Configure miss: xml2rfc
