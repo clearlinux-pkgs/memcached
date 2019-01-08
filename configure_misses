@@ -1,11 +1,7 @@
 Configure miss: icc in use
 Configure miss: clang in use
-Configure miss: sasl/sasl.h usability
-Configure miss: sasl/sasl.h presence
-Configure miss: sasl/sasl.h
 Configure miss: library containing umem_cache_create
 Configure miss: library containing gethugepagesizes
-Configure miss: sasl_callback_ft
 Configure miss: htonll
 Configure miss: getpagesizes
 Configure miss: memcntl
