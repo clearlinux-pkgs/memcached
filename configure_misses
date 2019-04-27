@@ -8,6 +8,7 @@ Configure miss: memcntl
 Configure miss: alignment
 Configure miss: setppriv
 Configure miss: pledge
+Configure miss: cap_enter
 Configure miss: umem.h usability
 Configure miss: umem.h presence
 Configure miss: umem.h
