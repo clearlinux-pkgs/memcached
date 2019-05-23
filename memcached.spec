@@ -4,7 +4,7 @@
 #
 Name     : memcached
 Version  : 1.5.14
-Release  : 32
+Release  : 33
 URL      : http://memcached.org/files/memcached-1.5.14.tar.gz
 Source0  : http://memcached.org/files/memcached-1.5.14.tar.gz
 Source1  : memcached.service
@@ -40,9 +40,18 @@ Group: Development
 Requires: memcached-bin = %{version}-%{release}
 Provides: memcached-devel = %{version}-%{release}
 Requires: memcached = %{version}-%{release}
+Requires: memcached = %{version}-%{release}
 
 %description dev
 dev components for the memcached package.
+
+
+%package extras
+Summary: extras components for the memcached package.
+Group: Default
+
+%description extras
+extras components for the memcached package.
 
 
 %package license
@@ -77,7 +86,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1556391826
+export SOURCE_DATE_EPOCH=1558601786
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
@@ -97,7 +106,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make test
 
 %install
-export SOURCE_DATE_EPOCH=1556391826
+export SOURCE_DATE_EPOCH=1558601786
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/memcached
 cp COPYING %{buildroot}/usr/share/package-licenses/memcached/COPYING
@@ -114,12 +123,16 @@ install -m 0755 scripts/memcached-tool %{buildroot}%{_bindir}/memcached-tool
 
 %files bin
 %defattr(-,root,root,-)
+%exclude /usr/bin/memcached-tool
 /usr/bin/memcached
-/usr/bin/memcached-tool
 
 %files dev
 %defattr(-,root,root,-)
 /usr/include/memcached/protocol_binary.h
+
+%files extras
+%defattr(-,root,root,-)
+/usr/bin/memcached-tool
 
 %files license
 %defattr(0644,root,root,0755)
