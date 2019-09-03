@@ -4,9 +4,9 @@
 #
 Name     : memcached
 Version  : 1.5.17
-Release  : 36
-URL      : http://memcached.org/files/memcached-1.5.17.tar.gz
-Source0  : http://memcached.org/files/memcached-1.5.17.tar.gz
+Release  : 37
+URL      : https://memcached.org/files/memcached-1.5.17.tar.gz
+Source0  : https://memcached.org/files/memcached-1.5.17.tar.gz
 Source1  : memcached.service
 Summary  : High Performance, Distributed Memory Object Cache
 Group    : Development/Tools
@@ -85,7 +85,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1567206699
+export SOURCE_DATE_EPOCH=1567535021
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -106,7 +106,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make test
 
 %install
-export SOURCE_DATE_EPOCH=1567206699
+export SOURCE_DATE_EPOCH=1567535021
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/memcached
 cp COPYING %{buildroot}/usr/share/package-licenses/memcached/COPYING
