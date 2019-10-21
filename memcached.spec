@@ -4,7 +4,7 @@
 #
 Name     : memcached
 Version  : 1.5.19
-Release  : 38
+Release  : 39
 URL      : https://memcached.org/files/memcached-1.5.19.tar.gz
 Source0  : https://memcached.org/files/memcached-1.5.19.tar.gz
 Source1  : memcached.service
@@ -18,6 +18,7 @@ Requires: memcached-services = %{version}-%{release}
 BuildRequires : cyrus-sasl-dev
 BuildRequires : libevent-dev
 BuildRequires : libxslt-bin
+BuildRequires : perl(Test::More)
 
 %description
 memcached is a high-performance, distributed memory object caching
@@ -85,7 +86,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1570064855
+export SOURCE_DATE_EPOCH=1571634395
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -106,11 +107,11 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make test
 
 %install
-export SOURCE_DATE_EPOCH=1570064855
+export SOURCE_DATE_EPOCH=1571634395
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/memcached
-cp COPYING %{buildroot}/usr/share/package-licenses/memcached/COPYING
-cp LICENSE.bipbuffer %{buildroot}/usr/share/package-licenses/memcached/LICENSE.bipbuffer
+cp %{_builddir}/memcached-1.5.19/COPYING %{buildroot}/usr/share/package-licenses/memcached/48d3aad525d9acd423ac6021c44fa4d15d4ee9ad
+cp %{_builddir}/memcached-1.5.19/LICENSE.bipbuffer %{buildroot}/usr/share/package-licenses/memcached/7d1d9235b1b589f4347e7e2452db90d57b04fea9
 %make_install
 mkdir -p %{buildroot}/usr/lib/systemd/system
 install -m 0644 %{SOURCE1} %{buildroot}/usr/lib/systemd/system/memcached.service
@@ -135,8 +136,8 @@ install -m 0755 scripts/memcached-tool %{buildroot}%{_bindir}/memcached-tool
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/memcached/COPYING
-/usr/share/package-licenses/memcached/LICENSE.bipbuffer
+/usr/share/package-licenses/memcached/48d3aad525d9acd423ac6021c44fa4d15d4ee9ad
+/usr/share/package-licenses/memcached/7d1d9235b1b589f4347e7e2452db90d57b04fea9
 
 %files man
 %defattr(0644,root,root,0755)
