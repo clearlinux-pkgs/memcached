@@ -4,7 +4,7 @@
 #
 Name     : memcached
 Version  : 1.5.20
-Release  : 41
+Release  : 42
 URL      : https://memcached.org/files/memcached-1.5.20.tar.gz
 Source0  : https://memcached.org/files/memcached-1.5.20.tar.gz
 Source1  : memcached.service
