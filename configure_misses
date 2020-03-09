@@ -1,6 +1,5 @@
 Configure miss: icc in use
 Configure miss: clang in use
-Configure miss: library containing umem_cache_create
 Configure miss: library containing gethugepagesizes
 Configure miss: htonll
 Configure miss: getpagesizes
@@ -9,7 +8,4 @@ Configure miss: alignment
 Configure miss: setppriv
 Configure miss: pledge
 Configure miss: cap_enter
-Configure miss: umem.h usability
-Configure miss: umem.h presence
-Configure miss: umem.h
 Configure miss: xml2rfc
