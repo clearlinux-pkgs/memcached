@@ -1,11 +1,11 @@
-Configure miss: icc in use
-Configure miss: clang in use
-Configure miss: library containing gethugepagesizes
-Configure miss: htonll
-Configure miss: getpagesizes
-Configure miss: memcntl
 Configure miss: alignment
-Configure miss: setppriv
-Configure miss: pledge
 Configure miss: cap_enter
+Configure miss: clang in use
+Configure miss: getpagesizes
+Configure miss: htonll
+Configure miss: icc in use
+Configure miss: library containing gethugepagesizes
+Configure miss: memcntl
+Configure miss: pledge
+Configure miss: setppriv
 Configure miss: xml2rfc
