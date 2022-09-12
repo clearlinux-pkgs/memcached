@@ -4,7 +4,7 @@
 #
 Name     : memcached
 Version  : 1.6.17
-Release  : 61
+Release  : 62
 URL      : https://memcached.org/files/memcached-1.6.17.tar.gz
 Source0  : https://memcached.org/files/memcached-1.6.17.tar.gz
 Source1  : memcached.service
