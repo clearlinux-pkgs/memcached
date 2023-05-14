@@ -1,13 +1,26 @@
 Configure miss: alignment
+Configure miss: alignment
+Configure miss: cap_enter
 Configure miss: cap_enter
 Configure miss: clang in use
+Configure miss: clang in use
+Configure miss: gcc options needed to detect all undeclared functions
 Configure miss: gcc options needed to detect all undeclared functions
 Configure miss: getpagesizes
+Configure miss: getpagesizes
+Configure miss: htonll
 Configure miss: htonll
 Configure miss: icc in use
+Configure miss: icc in use
+Configure miss: library containing gethugepagesizes
 Configure miss: library containing gethugepagesizes
 Configure miss: memcntl
+Configure miss: memcntl
+Configure miss: pledge
 Configure miss: pledge
 Configure miss: sandbox_init
+Configure miss: sandbox_init
 Configure miss: setppriv
+Configure miss: setppriv
+Configure miss: xml2rfc
 Configure miss: xml2rfc
