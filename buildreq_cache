@@ -1,3 +1,4 @@
 1.6.22
 cyrus-sasl-dev
 libxslt-bin
+perl(Getopt::Long)
