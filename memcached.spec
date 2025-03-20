@@ -6,10 +6,10 @@
 # autospec commit: fbbd4e3
 #
 Name     : memcached
-Version  : 1.6.37
-Release  : 84
-URL      : https://memcached.org/files/memcached-1.6.37.tar.gz
-Source0  : https://memcached.org/files/memcached-1.6.37.tar.gz
+Version  : 1.6.38
+Release  : 85
+URL      : https://memcached.org/files/memcached-1.6.38.tar.gz
+Source0  : https://memcached.org/files/memcached-1.6.38.tar.gz
 Source1  : memcached.service
 Summary  : High Performance, Distributed Memory Object Cache
 Group    : Development/Tools
@@ -87,10 +87,10 @@ services components for the memcached package.
 
 
 %prep
-%setup -q -n memcached-1.6.37
-cd %{_builddir}/memcached-1.6.37
+%setup -q -n memcached-1.6.38
+cd %{_builddir}/memcached-1.6.38
 pushd ..
-cp -a memcached-1.6.37 buildavx2
+cp -a memcached-1.6.38 buildavx2
 popd
 
 %build
@@ -98,7 +98,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1740155678
+export SOURCE_DATE_EPOCH=1742429592
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -152,7 +152,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1740155678
+export SOURCE_DATE_EPOCH=1742429592
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/memcached
 cp %{_builddir}/memcached-%{version}/COPYING %{buildroot}/usr/share/package-licenses/memcached/48d3aad525d9acd423ac6021c44fa4d15d4ee9ad || :
